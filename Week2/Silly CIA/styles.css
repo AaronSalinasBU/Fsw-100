@@ -1,0 +1,20 @@
+h1 {
+    color: darkgreen;
+}
+.headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.paragraph {
+    font-size: 25px;
+}
+#url a:link { 
+    text-decoration: none; 
+}
+#url a:hover { 
+    text-decoration: underline;
+}
+.img {
+    float: left;
+    margin-right: 20px;
+}
