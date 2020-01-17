@@ -4,45 +4,79 @@
 }
 .grid{
     display: grid;
-    grid-template-columns: 5fr 5fr 5fr 5fr;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    grid-template-areas: "header header header header""two three four five""six six seven seven""eight eight eight nine";
-    grid-gap: 10px;
+    grid-template-rows: repeat(9, 50px);
+    grid-gap: 1px;
 }
 
-header{
-    grid-area: header;
+#box1{
     background-color: #F5C6D6;
 }
-main{
-    grid-area: two;
+#box2{
     background-color: #EE2E84;
 }
 #box3{
-    grid-area: three;
     background-color: #EE2E84;
 }
 #box4{
-    grid-area: four;
     background-color: #EE2E84;
 }
 #box5{
-    grid-area: five;
     background-color: #EE2E84;
 }
 #box6{
-    grid-area: six;
     background-color: #85CFD8;
 }
 #box7{
-    grid-area: seven;
     background-color: #85CFD8;
 }
 #box8{
-    grid-area: eight;
     background-color: #8DC63F;
 }
-footer{
-    grid-area: nine;
+#box9{
     background-color: #E76E34;
+}
+@media only screen and (min-width:768px){
+    *{
+        box-sizing: border-box;
+        font-size: 0px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 5fr 5fr 5fr 5fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas: "header header header header"
+                             "two three four five"
+                             "six six seven seven"
+                             "eight eight eight nine";
+        grid-gap: 10px;
+    }
+    
+    #box1{
+        grid-area: header;
+    }
+    #box2{
+        grid-area: two;
+    }
+    #box3{
+        grid-area: three;
+    }
+    #box4{
+        grid-area: four;
+    }
+    #box5{
+        grid-area: five;
+    }
+    #box6{
+        grid-area: six;
+    }
+    #box7{
+        grid-area: seven;
+    }
+    #box8{
+        grid-area: eight;
+    }
+    #box9{
+        grid-area: nine;
+    }
+    
 }
