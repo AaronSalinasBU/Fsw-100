@@ -6,16 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week6 CSS</title>
     <link rel="stylesheet" href="Week6styles.css">
-    <script src="WeekJava.js"></script>
+    <script type="text/javascript" src="sound-mouseover.js"></script>
 </head>
 <body class="boxes">
     <h1 id="box1">box1
         <p>click me</p>
     </h1>
     <h2 id="box2">box2</h2>
-    <h3 id="box3">box3</h3>
+    <a id="box3" href="about.htm" onmouseover="playclip();">box3
+    <p>Will play a song.</p>
+    </a>
     <h4 id="box4">box4</h4>
     <h5 id="box5">box5</h5>
-    <h6 id="box6">box6</h6>
-</body>
+    <h6 id="box6">box6
+        <p>Doesnt like to be touched</p>
+    </h6>
+    <audio id="song">
+        <source src="dance_monkey.mp3" type="audio/mpeg"></audio>
 </html>
