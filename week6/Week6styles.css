@@ -1,0 +1,38 @@
+.boxes{
+    display: flex;
+    margin: 5px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+#box1{
+    display: flex;
+    flex-direction: column;
+    background-color: darkred;
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#box1:hover{ color: green;
+    transition-duration: 2s;
+    background-color: black;
+}
+#box1:active { color: blue;
+    transition: step-end;
+
+}
+
+#box2{
+    background-color: black;
+    color: chartreuse;
+}
+
+#box2:hover{
+    border: 10px rgb(43, 6, 177);
+    border-width: 20pz;
+    border-style: dashed;
+    
+}
